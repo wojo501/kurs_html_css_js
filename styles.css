@@ -1,0 +1,187 @@
+
+body {
+background: white;
+
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
+margin: 0;
+padding: 0;
+}
+
+footer, header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color:#494e5f;
+}
+
+footer>div, header>div{
+    margin: 20 px;
+}
+
+
+.nawigacja ul, .footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: #ffe7d4;
+
+}
+
+.nawigacja a:hover, .footer a:hover{
+    color: #ffe7d4;
+    background: #494e5f;
+    padding: 15px;
+}
+
+.nawigacja li, .footer li{
+    margin: auto;
+    padding: 15px;
+    background-color: #ffe7d4;
+    
+}
+
+.naglowki_prawa{
+    background: #ffe7d4;
+    padding: 15px;
+    
+    }
+
+.naglowek_wysrodkuj {
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration:none;
+ }
+
+ main {
+    display: flex;
+    flex-flow: row wrap;
+
+ }
+
+ .srodek {
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+ }
+
+ #lewa.srodek{
+    margin: 0;
+    padding: 0;
+    background-color: #494e5f;
+    padding: 10px;
+    flex: 1;
+    color: #ffe7d4;
+
+ }
+
+ #prawa.srodek{
+    flex: 3;
+    color: #494e5f;
+ }
+
+ .lewa {
+    /* flex-basis: 40%; */
+    padding: 20px;
+ }
+
+ .prawa {
+    /* flex-basis: 60%; */
+    padding: 20px;
+    
+ }
+
+ main h1, main h2 {
+    padding-left: 20px;
+ }
+
+ img {
+    display: block;
+    border-radius: 80%;
+    margin: 20px;
+}
+
+
+figure {
+    display: inline-block;
+    margin: 20px; 
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+
+}
+
+ @media screen and (min-width: 800px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+ }
+
+ @media screen and (max-width: 800px){
+    main{
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    figure img {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        border: 1px dotted black;
+    }
+ }
+
+ .opis {
+    color: #5e606a;
+ }
+
+ ul.lista_zatrudnienie{
+    list-style-type: none;
+ }
+
+ ul.lista_zatrudnienie li{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+ul.lista_zatrudnienie li + p{
+    font-size: 105%;
+    font-weight: bold;
+}
+
+
+h3 + p {
+    font-size: 105%;
+    font-weight: bold;
+}
+
+#lista_cechy{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
